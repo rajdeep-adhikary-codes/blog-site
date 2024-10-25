@@ -26,7 +26,8 @@ const addPostValidateSchema = Joi.object({
 });
 
 const getPostValidateSchema = Joi.object({
-    post_id: Joi.string()
+    post_id: Joi.string(),
+    user_id: Joi.string()
 });
 
 const updatePostValidateSchema = Joi.object({

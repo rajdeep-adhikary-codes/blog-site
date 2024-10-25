@@ -37,12 +37,15 @@ const addPost = async(req, res) => {
 const getPost = async(req, res) => {
     try {
         
-        let { post_id } = req.query;
+        let { post_id, user_id } = req.query;
 
         const matchParams = {};
 
         if(!check.isEmpty(post_id)){            
             matchParams._id = new mongoose.Types.ObjectId(post_id);
+        }
+        else if(!check.isEmpty(user_id)){
+            matchParams.author = new mongoose.Types.ObjectId(user_id);
         }
         else{
             

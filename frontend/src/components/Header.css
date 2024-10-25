@@ -1,0 +1,14 @@
+/* src/components/Header.css */
+.header {
+    background-color: #3a3a3a; /* Dark background for header */
+    color: white; /* White text color */
+    padding: 20px; /* Padding for spacing */
+    text-align: center; /* Center the text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.brand-name {
+    margin: 0; /* Remove default margin */
+    font-size: 2.5rem; /* Increase font size for brand name */
+    font-weight: bold; /* Make it bold */
+}

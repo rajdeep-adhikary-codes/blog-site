@@ -1,0 +1,316 @@
+/* src/components/Post.css */
+
+/* General styles for the post detail and add post container */
+.post-detail-container,
+.add-post-container {
+    max-width: 800px; /* Maximum width for the content */
+    margin: 20px auto; /* Centered with margin */
+    padding: 20px; /* Padding for spacing */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Post Title */
+.post-title {
+    font-size: 2rem; /* Title font size */
+    color: #333; /* Dark text color */
+}
+
+/* Post Author */
+.post-author {
+    font-size: 1.2rem; /* Author font size */
+    color: #777; /* Gray color for the author */
+}
+
+/* Post Content */
+.post-content {
+    font-size: 1rem; /* Content font size */
+    line-height: 1.5; /* Line height for readability */
+    color: #555; /* Dark gray for content */
+}
+
+/* Comments Section */
+.comments-header {
+    margin-top: 30px; /* Margin above comments section */
+    font-size: 1.5rem; /* Header font size */
+}
+
+/* Individual Comment */
+.comment {
+    padding: 10px; /* Padding for each comment */
+    border-bottom: 1px solid #ddd; /* Separator between comments */
+}
+
+.comment-author {
+    font-weight: bold; /* Bold for comment author */
+    color: #333; /* Dark text color */
+}
+
+.comment-text {
+    margin: 5px 0; /* Margin for comment text */
+    color: #444; /* Dark gray for comment text */
+}
+
+/* Back Button */
+.button-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align to the right */
+    margin-bottom: 20px; /* Space below the button */
+}
+
+.back-button {
+    background-color: #535353; /* Button background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+}
+
+.back-button:hover {
+    background-color: #222222; /* Darker on hover */
+}
+
+/* Comment Form */
+.comment-form {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    margin-top: 20px; /* Space above the form */
+}
+
+.comment-input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the textarea */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below the textarea */
+    resize: none; /* Disable resizing */
+}
+
+.submit-comment {
+    background-color: #28a745; /* Green background for submit button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+}
+
+.submit-comment:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Styles for Add Post Form */
+.form-group {
+    margin-bottom: 1rem; /* Space below form groups */
+}
+
+.form-group label {
+    display: block; /* Block display for labels */
+    margin-bottom: 0.5rem; /* Space below label */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Full width inputs */
+    padding: 0.5rem; /* Padding inside inputs */
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 0.25rem; /* Rounded corners */
+}
+
+button {
+    background-color: #262626; /* Button background color */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 0.5rem 1rem; /* Padding for button */
+    border-radius: 0.25rem; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 3px;
+    transition: .3s;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.addButton {
+    background-color: #262626; /* Button background color */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 0.5rem 1rem; /* Padding for button */
+    border-radius: 0.25rem; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 3px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #191919; /* Darker on hover */
+}
+
+.header-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding for the header */
+    background-color: #262626; /* Header background color */
+    color: white; /* Text color */
+}
+
+.logo {
+    font-size: 1.5rem; /* Logo font size */
+    margin: 0; /* Remove margin */
+}
+
+.user-info {
+    position: relative; /* Position relative for dropdown */
+}
+
+.user-name {
+    cursor: pointer; /* Pointer cursor for the user name */
+}
+
+.dropdown {
+    display: inline-block; /* Inline block for dropdown */
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown initially */
+    position: absolute; /* Position absolute for dropdown */
+    background-color: white; /* Dropdown background */
+    min-width: 160px; /* Minimum width */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+    z-index: 1; /* Ensure dropdown is above other elements */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+    color: black; /* Link color */
+    padding: 12px 16px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Block display for links */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Change background on hover */
+}
+
+.caret {
+    margin-left: 10px; /* Space between name and caret */
+    font-size: 0.5rem; /* Adjust size if needed */
+}
+
+/* src/components/Posts/Post.css */
+.my-posts-container {
+    padding: 20px;
+}
+
+.my-posts-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.my-posts-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.my-posts-container li {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.my-posts-container button {
+    margin-right: 10px;
+}
+
+
+/* Post.css */
+button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* src/components/Post.css */
+
+.edit-post-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-post-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.edit-post-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.edit-post-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-button, .cancel-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.submit-button {
+    background-color: #262626;
+    color: white;
+    margin-right: 10px;
+    transition: .3s;
+}
+
+.submit-button:hover {
+    background-color: #191919;
+}
+
+.cancel-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #5a6268;
+}
